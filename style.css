@@ -13,22 +13,24 @@ body{
 }
 
 .container{
+    background-color: honeydew;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 70px;
     width: 400px;
+    min-height: 400px;
     height: auto;
     max-height: 100vh;
-    border: 1px solid #1a1616;
     border-radius: 10px;
     padding: 20px 30px;
+    box-shadow: 0px 0px 10px 0px #1a1616;
 
 }
 
 .name{
-    color: aqua;
+    color: rgb(8, 8, 8);
     text-align: start;
     margin-bottom: 20px;
 }
@@ -40,27 +42,38 @@ body{
 }
 
 #text-input-box{
-    width: 100%;
+    position: relative;
+    width: 80%;
     padding: 15px 40px;
-    border-radius: 10px;
+    border-radius: 19px 0 0 19px;
+    border: none;
+    box-shadow: -1px 1px 5px 1px #1a1616;
+    ;
+    z-index: 2;
     
 }
 
 #add-btn{
     position: relative;
-    top: -50px;
+    top: 45px;
     right: -80%;
-    padding: 15px 30px;
-    border-radius: 40px;
+    padding: 15px 20px;
+    border-radius: 0 19px 19px 0;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #1a1616;
     cursor: pointer;
-    background-color: coral;
+    background-color: rgb(212, 107, 9);
+    font-weight: bold;
+    z-index: 1;
 }
 
 #add-btn:hover{
-    background-color: greenyellow;
+    background: linear-gradient(to right, #7bcb63, #ffad06);
+    
 }
 
 ul{
+    margin-top: 15px;
    list-style: none; 
    width: 100%;
 }
@@ -75,4 +88,8 @@ ul{
 .list li{
     display: flex;
     gap: 10px;  
+}
+
+.fa-trash{
+    cursor: pointer;
 }
