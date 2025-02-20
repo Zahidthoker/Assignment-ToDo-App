@@ -5,8 +5,7 @@ const addButton = document.getElementById('add-btn');
 const taskList = document.getElementById('task-list');
 let listNumer = 0;
 
-// Add button
-addButton.addEventListener('click', () => {
+const addTask = () => {
    if(inputValue.value===""){
       addButton.disabled = true;}
  else{
@@ -90,5 +89,14 @@ clearbtn.addEventListener('click',()=>{
 
  }
 
+}
+
+
+// Add button
+addButton.addEventListener('click', addTask);
+document.addEventListener('keydown',(event)=>{
+   if(event.key === 'Enter'){
+      addTask();
+   }
 });
 
