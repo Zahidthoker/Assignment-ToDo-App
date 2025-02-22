@@ -43,7 +43,7 @@ body{
 }
 
 #text-input-box{
-    position: relative;
+    position: absolute;
     width: 80%;
     padding: 15px 40px;
     border-radius: 19px 0 0 19px;
@@ -55,9 +55,8 @@ body{
 }
 
 #add-btn{
-    position: relative;
-    top: 45px;
-    right: -80%;
+    position: absolute;
+    right: 3px;
     padding: 15px 20px;
     border-radius: 0 19px 19px 0;
     border: none;
